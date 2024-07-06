@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dice Roller Game</title>
+    <style>
+        body{
+            font-family: Verdana, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+            text-align: center;
+            background-color: white;
+        }
+
+        h1{
+            color: #333;
+
+        }
+
+        img{
+            display: block;
+            margin: 0 auto;
+            width:200px;
+
+        }
+
+        form{
+            margin-top: 20px;
+
+        }
+
+        input{
+            background-color: #007bff;
+            color: white;
+            padding: 20px 60px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            font-size: 25px;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Dice Roller Game</h1>
+<form action="/roll" method="POST">
+    <img src="../static/{{ dice_img }}" alt="Dice">
+    <br>
+    <input type="submit" value="Roll">
+
+</form>
+</body>
+</html>
